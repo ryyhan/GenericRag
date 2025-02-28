@@ -36,7 +36,7 @@ def chunk_by_tokens(text: str, chunk_size: int, chunk_overlap: int = 0) -> list:
     chunks = text_splitter.split_text(text)
     return chunks
 
-# Chunk recursively by characters (default behavior)
+# Chunk recursively by characters
 def chunk_recursively(text: str, chunk_size: int, chunk_overlap: int = 0) -> list:
     """
     Chunk the text recursively by characters.
