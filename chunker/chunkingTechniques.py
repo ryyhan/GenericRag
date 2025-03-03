@@ -54,7 +54,8 @@ def chunk_recursively(text: str, chunk_size: int, chunk_overlap: int = 0) -> lis
     chunks = text_splitter.split_text(text)
     return chunks
 
-# Example usage
+"""
+Example usage
 if __name__ == "__main__":
     print("Chunk by characters:")
     print(chunk_by_characters(text, 50, 10))
@@ -64,3 +65,4 @@ if __name__ == "__main__":
 
     print("\nChunk recursively by characters:")
     print(chunk_recursively(text, 100, 20))
+"""
